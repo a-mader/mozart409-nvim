@@ -19,10 +19,11 @@ require("lazy").setup({
 	{
 		-- LSP Configuration & Plugins
 		"neovim/nvim-lspconfig",
+		version = false,
 		dependencies = {
 			-- Automatically install LSPs to stdpath for neovim
-			{ "williamboman/mason.nvim", config = true },
-			"williamboman/mason-lspconfig.nvim",
+			{ "williamboman/mason.nvim", version = false, config = true },
+			{ "williamboman/mason-lspconfig.nvim", version = false },
 
 			-- Useful status updates for LSP
 			-- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
@@ -30,6 +31,17 @@ require("lazy").setup({
 
 			-- Additional lua configuration, makes nvim stuff amazing!
 			"folke/neodev.nvim",
+		},
+	},
+
+	{
+		"mason-org/mason-lspconfig.nvim",
+		opts = {
+			ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls", "html" },
+		},
+		dependencies = {
+			{ "mason-org/mason.nvim", opts = {} },
+			"neovim/nvim-lspconfig",
 		},
 	},
 
@@ -280,7 +292,8 @@ require("lazy").setup({
 	-- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
 	--       These are some example plugins that I've included in the kickstart repository.
 	--       Uncomment any of the lines below to enable them.
-	require("kickstart.plugins.autoformat"),
+	-- require("kickstart.plugins.autoformat"),
+
 	require("kickstart.plugins.debug"),
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
