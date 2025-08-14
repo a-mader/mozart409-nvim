@@ -1,10 +1,29 @@
 return {
 	"dmtrKovalenko/fff.nvim",
 	build = "cargo build --release",
+	lazy = false,
+
 	-- or if you are using nixos
 	-- build = "nix run .#release",
 	opts = {
 		-- pass here all the options
+		keymaps = {
+			move_up = { "k", "Up", "Tab" },
+			move_down = { "j", "Down", "S-Tab" },
+			close = { "q", "<Esc>", "<C-c>" },
+			select = { "<CR>", "Enter" },
+		},
+		-- Image preview (requires terminal with image support)
+		image_preview = {
+			enabled = true, -- Enable image previews
+			max_width = 80, -- Maximum image width in columns
+			max_height = 24, -- Maximum image height in lines
+		},
+
+		-- Icons
+		icons = {
+			enabled = true, -- Enable file icons
+		},
 	},
 	keys = {
 		{
