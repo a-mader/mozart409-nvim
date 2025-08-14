@@ -8,10 +8,10 @@ return {
 	opts = {
 		-- pass here all the options
 		keymaps = {
-			move_up = { "k", "Up", "Tab" },
-			move_down = { "j", "Down", "S-Tab" },
+			move_up = { "Up", "<Tab>" },
+			move_down = { "Down", "<S-Tab>" },
 			close = { "q", "<Esc>", "<C-c>" },
-			select = { "<CR>", "Enter" },
+			select = { "<CR>", "<Enter>" },
 		},
 		-- Image preview (requires terminal with image support)
 		image_preview = {
