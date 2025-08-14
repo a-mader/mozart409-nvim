@@ -9,7 +9,10 @@ return {
 		-- refer to the configuration section below
 		bigfile = { enabled = true },
 		dashboard = { enabled = false },
-		explorer = { enabled = true },
+		---@class snacks.explorer.Config
+		explorer = {
+			enabled = true,
+		},
 		indent = { enabled = true },
 		input = { enabled = true },
 		picker = { enabled = true },
@@ -19,5 +22,14 @@ return {
 		scroll = { enabled = true },
 		statuscolumn = { enabled = true },
 		words = { enabled = true },
+	},
+	keys = {
+		{
+			"<leader>fe",
+			function()
+				Snacks.explorer()
+			end,
+			desc = "File Explorer",
+		},
 	},
 }
