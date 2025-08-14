@@ -11,6 +11,7 @@
   "d2-vim": { "branch": "master", "commit": "24626ecb770263dfd7b7f77b98ede6fc6d683cb9" },
   "dashboard-nvim": { "branch": "master", "commit": "c42fcfbd96dfcaa486c0a0ab52494316f1c31350" },
   "edgy.nvim": { "branch": "main", "commit": "7e8dedc39abebe40c289b8012cc89b11c69aa7a0" },
+  "fff.nvim": { "branch": "main", "commit": "4e1a94c9e5d5706665aa7c0fb9c19fe9f94100a0" },
   "fidget.nvim": { "branch": "main", "commit": "2cb5edb2dd6700a958a446b20bb2be04d318da9d" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
   "gen.nvim": { "branch": "main", "commit": "c8e1f574d4a3a839dde73a87bdc319a62ee1e559" },
