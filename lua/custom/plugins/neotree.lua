@@ -9,7 +9,7 @@ return {
 		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
 		"MunifTanjim/nui.nvim",
 	},
-	lazy = true,
+	lazy = false,
 	---@module "neo-tree"
 	---@type neotree.Config?
 	opts = {
