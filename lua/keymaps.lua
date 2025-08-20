@@ -40,3 +40,10 @@ vim.keymap.set("v", "<leader>sw", '<esc><cmd>lua require("spectre").open_visual(
 vim.keymap.set("n", "<leader>sp", '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
 	desc = "Search on current file",
 })
+vim.keymap.set("n", "<leader>cc", "<cmd>CopilotChatToggle<CR>", {
+	desc = "Toggle Copilot Chat",
+})
+
+-- LSP keymaps
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
+vim.keymap.set("v", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })

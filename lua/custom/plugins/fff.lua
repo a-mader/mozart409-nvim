@@ -10,7 +10,7 @@ return {
 		keymaps = {
 			move_up = { "Up", "<Tab>" },
 			move_down = { "Down", "<S-Tab>" },
-			close = { "q", "<Esc>", "<C-c>" },
+			close = { "<Esc>", "<C-c>" },
 			select = { "<CR>", "<Enter>" },
 		},
 		-- Image preview (requires terminal with image support)
